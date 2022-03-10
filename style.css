@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+img  { max-width: 100%; }
+
+[class*="col-"] { margin: 0; }
+
+/* ------- Universal Styles & Utility Classes */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: rgb(60,60,60);
+}
+
+.tall-30    { min-height: 30vh;  }
+.tall-50    { min-height: 50vh;  }
+.tall-70    { min-height: 70vh;  }
+.tall-80    { min-height: 80vh;  }
+.tall-90    { min-height: 90vh;  }
+.tall-100   { min-height: 100vh; }
+
+.padded     { padding: 5%;   }
+.padded-sm  { padding: 1%;   }
+.padded-lg  { padding: 10%;  }
+.padded-1   { padding: 1rem; }
+.padded-2   { padding: 2rem; }
+
+.padded-t   { padding-top: 5%;    }
+.padded-b   { padding-bottom: 5%; }
+.padded-l   { padding-left: 5%;   }
+.padded-r   { padding-right: 5%;  }
+
+.padded-0   { padding: 0;        }
+.padded-b-0 { padding-bottom: 0; }
+.margin-b-0 { margin-bottom: 0;  }
+
+
+/* Background and Image Styles */
+.portrait-tall  { padding-bottom: 175%; }
+.portrait       { padding-bottom: 125%; }
+.square         { padding-bottom: 100%; }
+.landscape      { padding-bottom: 66%;  }
+.landscape-wide { padding-bottom: 56%;  }
+
+.bg-pos-t { background-position: top;    }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left;   }
+.bg-pos-r { background-position: right;  }
+
+.bg-rust  { background-color: #d3b4a2; }
+.bg-green { background-color: #9b9b81; }
+.bg-dark {
+    background-color: #a2745c;
+    color: white;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+}
+
+.bg-plant {
+    background-image: url('/images/plant.jpg');
+    background-position: 50% 43%;
+}
+
+.bg-plant-2 {
+    background-image: url('/images/plant-2.jpg');
+    background-position: 75% 50%;
+}
+.bg-meeting {
+    background-image: url('/images/meeting.jpg');
+}
+.bg-mockup {
+    background-image: url('/images/mockup.jpg');
+}
+
+
+/* Icon Styles */
+.fas,
+.fa-solid {
+    display: inline-block;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+
+/* Typography Styles */
+.center { text-align: center; }
+.right  { text-align: right; }
+.left   { text-align: left; }
+
+.font-weight-bold   { font-weight: bolder; }
+.font-weight-normal { font-weight: normal; }
+
+.featured-text { color: purple; }
+.white-text    { color: white; }
+.small-text    { font-size: 1.5rem; }
+.big-text      { font-size: 4.5rem; }
+.medium-text   { font-size: 1.8rem;
+                 line-height: 1.25; }
+    
+.logo {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2, h3, h4, h5 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+
+p {
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+p:last-child { margin-bottom: 0; }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a { padding: 0.25rem; }
+
+header a:hover { color: #a2745c; }
+
+.button {
+    text-decoration: none;
+    border: 2px solid; 
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+}
+
+.bg-dark .button:hover {
+    color: #d3b4a2;
+}
+
+.subtle { 
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+
+/* Video Styles */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    display: block;
+    /* height: 0;  */
+    /* overflow: hidden;  */
+    /* max-width: 100%;  */
+}
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed {
+    position: absolute; 
+    /* top: 0; 
+    left: 0;  */
+    /* bottom: 0;
+    right: 0; */
+    width: 100%; 
+    height: 100%;
+}
+
+
+/* Header & Footer Styles */
+header { padding: 2% 5%; }
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover { color: #d3b4a2; }
+
+
+/* Form Styles */
+form input,
+form textarea {
+    width: 100%;
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    display: block;
+    border: 2px solid transparent;
+}
+
+input {
+    text-transform: capitalize;
+}
+
+textarea {
+    resize: vertical;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+form button {
+    padding: 0.8rem 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background-color: purple;
+    appearance: none;
+    border: none;
+    color: inherit;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid purple;
+    outline: none;
+
+}
+
+
+/* Hamburger Menu Styles */
+.active { color: teal; }
+
+.hamburger-button {
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    color: purple;
+    position: fixed;
+    right: 10%;
+    top: 5%;
+    z-index: 1;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: lightblue;
+    padding: 20% 5%;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 5vh 5%;
+    margin: 5%;
+    border: 3px solid white;
+    border-radius: 1rem;
+}
+
+.mobile-menu a:hover {
+    background-color: violet;
+    color: white;
+}
+
+
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md,
+.mobile-menu { display: none; }
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+@media (max-width: 48em) {
+
+  .show-sm { display: block; }
+  .hide-sm { display: none;  }
+	 
+  .sm-text-center { text-align: center; }
+  .sm-text-left { text-align: left; }
+  .sm-text-right { text-align: right; }
+
+  .sm-padded { padding: 5%; }
+  .sm-padded-1 { padding: 1rem; }
+  .sm-padded-05 { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-l-0 { margin-left: 0; }
+  .sm-margin-r-0 { margin-right: 0; }
+
+  .center-sm { text-align: center; }
+
+  .flex-flip-sm { flex-direction: column-reverse; }
+
+  .bg-plant {
+        background-image: url('/images/plant-light.png');
+    }
+
+  .bg-plant-2 {
+        background-image: url('/images/plant-2-light.png');
+        background-position: 45% 50%;
+    }
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+/* @media (max-width: 64em) {
+
+    body { border: 2px solid green; padding: 0.5rem; }
+
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+
+  .md-tall-80 { min-height: 80vh; }
+  .md-tall-50 { min-height: 50vh; }
+} */
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+/* @media (max-width: 36em) {
+
+  .show-xs { display: block; }
+  .hide-xs { display: none;  }
+
+    h1 {
+        font-size: 1.4rem;
+        line-height: 1.1;
+    }
+
+    h2 { font-size: 2rem; }
+
+    .big-text { font-size: 11vw; }
+} */
+
+/* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+/* @media (max-width: 25em) {
+
+    html { font-size: 12px; }
+
+  [class*="grid"] .xxs-stack { 
+      flex-basis: 100%;
+      max-width: 100%;
+  }
+} */
