@@ -312,6 +312,10 @@ form .button {
   .sm-text-left { text-align: left; }
   .sm-text-right { text-align: right; }
 
+  .sm-tall-50 { min-height: 50vh; }
+  .sm-tall-60 { min-height: 60vh; }
+  .sm-tall-70 { min-height: 70vh; }
+
   .sm-padded { padding: 5%; }
   .sm-padded-1 { padding: 1rem; }
   .sm-padded-05 { padding: 0.5rem; }
